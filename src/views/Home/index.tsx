@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 import Button from '../../components/Button';
 import Container from '../../components/Container';
+import InputText from '../../components/InputText';
 import { Colors } from '../../utils/Colors';
 
 const Home: React.FC = () => {
@@ -17,6 +18,8 @@ const Home: React.FC = () => {
       <Button onPress={onpressButton} selected={selected}>
         <Text style={{ color: selected ? Colors.white : Colors.gray }}>oi</Text>
       </Button>
+      <View style={{ marginTop: 20 }} />
+      <InputText placeholder="texto" />
     </Container>
   );
 }
